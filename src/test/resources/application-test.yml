@@ -1,0 +1,10 @@
+favorite:
+  fruits:
+    - name: apple
+      color: green
+    - name: banana
+      color: yellow
+    - name: strawberry
+      color: red
+    - name: peach
+      color: pink
