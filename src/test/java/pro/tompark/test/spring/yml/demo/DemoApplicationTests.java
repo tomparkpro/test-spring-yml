@@ -6,16 +6,14 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 import pro.tompark.test.spring.yml.demo.config.FruitProperties;
 import pro.tompark.test.spring.yml.demo.config.TestConfig;
 
 @Slf4j
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(classes = TestConfig.class)
 @ActiveProfiles("test")
-@ContextConfiguration(classes = TestConfig.class)
 public class DemoApplicationTests {
 
     @Autowired

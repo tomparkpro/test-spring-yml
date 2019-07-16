@@ -6,9 +6,9 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.List;
 
-@ConfigurationProperties(prefix = "favorite")
-@Configuration
 @Data
+@Configuration
+@ConfigurationProperties(prefix = "favorite")
 public class FruitProperties {
 
     private List<Fruit> fruits;
